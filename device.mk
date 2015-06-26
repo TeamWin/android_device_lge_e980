@@ -45,9 +45,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/init.geefhd.rc:root/init.geefhd.rc \
 	$(LOCAL_PATH)/fstab.geefhd:root/fstab.geefhd \
 	$(LOCAL_PATH)/ueventd.geefhd.rc:root/ueventd.geefhd.rc
+	
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab \
 
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+    $(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
 
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/keypad_8064.kl:system/usr/keylayout/gk-keypad-8064.kl
